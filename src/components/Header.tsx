@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Icon from "@/components/ui/icon";
+import Logo from "@/components/Logo";
 import { 
   Sheet, 
   SheetContent, 
@@ -28,9 +29,9 @@ const Header = () => {
     <header className="border-b bg-white sticky top-0 z-50">
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link to="/" className="font-bold text-2xl flex items-center text-primary">
-          <Icon name="ShoppingBag" className="mr-2" size={24} />
-          BrandShop
+        <Link to="/" className="font-bold text-2xl flex items-center">
+          <Logo size={36} className="mr-2" />
+          <span className="text-primary">BrandShop</span>
         </Link>
 
         {/* Desktop Navigation */}

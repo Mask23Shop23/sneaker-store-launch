@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
+import Logo from "@/components/Logo";
 import { Separator } from "@/components/ui/separator";
 
 const Footer = () => {
@@ -12,7 +13,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <h3 className="text-xl font-bold mb-4 flex items-center">
-              <Icon name="ShoppingBag" className="mr-2" size={20} />
+              <Logo size={32} className="mr-2" />
               BrandShop
             </h3>
             <p className="text-gray-400 mb-4">
