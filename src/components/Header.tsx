@@ -9,10 +9,10 @@ import {
   SheetContent, 
   SheetTrigger 
 } from "@/components/ui/sheet";
-import { useMobile } from "@/hooks/use-mobile";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Header = () => {
-  const isMobile = useMobile();
+  const isMobile = useIsMobile();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const navItems = [
